@@ -2,7 +2,7 @@ package service.email;
 
 import pojo.EmailFormat;
 import service.email.implementation.MailerSendService;
-import java.util.List;
+
 import java.util.Map;
 
 public class EmailService {

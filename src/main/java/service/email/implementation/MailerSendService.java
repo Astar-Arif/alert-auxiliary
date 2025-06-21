@@ -15,7 +15,7 @@ public class MailerSendService {
         com.mailersend.sdk.emails.Email email = new com.mailersend.sdk.emails.Email();
         email.setFrom(SENDER_NAME, SENDER_EMAIL);
         email.addRecipient(emailFormat.getRecipientName(), emailFormat.getRecipientEmail());
-        for (Pair<String, String> ele : emailFormat.getCarbonCopy()){
+        for (Pair<String, String> ele : emailFormat.getCarbonCopy()) {
             email.AddCc(ele.getLeft(), ele.getRight());
         }
         email.setSubject(emailFormat.getTitle());

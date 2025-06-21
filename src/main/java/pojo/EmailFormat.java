@@ -15,7 +15,8 @@ public class EmailFormat {
     private Object serviceProviderToken;
 
     public EmailFormat(
-            String title, String recipient, String recipientName, List<Pair<String, String>> carbonCopy, String content,
+            String title, String recipient, String recipientName,
+            List<Pair<String, String>> carbonCopy, String content,
             String contentFormat, EmailServiceProvider serviceProvider, Object serviceProviderToken
     ) {
         this.title = title;
@@ -28,12 +29,12 @@ public class EmailFormat {
         this.serviceProviderToken = serviceProviderToken;
     }
 
-    public void setRecipientName(String recipientName) {
-        this.recipientName = recipientName;
-    }
-
     public String getRecipientName() {
         return recipientName;
+    }
+
+    public void setRecipientName(String recipientName) {
+        this.recipientName = recipientName;
     }
 
     public String getRecipientEmail() {
